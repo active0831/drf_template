@@ -19,5 +19,5 @@ def main():
 
 
 if __name__ == '__main__':
-    print("okdk")
+    print("okd")
     main()
