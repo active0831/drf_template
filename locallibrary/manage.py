@@ -19,5 +19,5 @@ def main():
 
 
 if __name__ == '__main__':
-    print("omg!!")
+    print("rsi30!!!!")
     main()
