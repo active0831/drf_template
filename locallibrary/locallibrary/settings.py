@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-@n04h)x7x636=+r=k52=(zs!z+hg_@$day0@x_o6ps*w5ojlhl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["login.cavenet.io","220.83.254.228"]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -71,12 +71,16 @@ WSGI_APPLICATION = 'locallibrary.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
+# settings.py
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': '127.0.0.1',
+        'NAME': 'mysql-db',
+        'USER': 'root',
+        'PASSWORD': 'password',
+        'PORT': '3306',
+        'OPTIONS': {'charset': 'utf8mb4'},
     }
 }
 
