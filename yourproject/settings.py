@@ -32,7 +32,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #AWS_QUERYSTRING_AUTH = False
 #
 #if AWS_S3_ACCESS_KEY_ID and AWS_S3_SECRET_ACCESS_KEY and AWS_STORAGE_BUCKET_NAME:
-#    # 장고 4.2부터 스토리지 클래스 지정방법이 변경되었습니다.
 #    if django.VERSION < (4, 2):
 #        DEFAULT_FILE_STORAGE = "storage.AwsMediaStorage"
 #        STATICFILES_STORAGE = "storage.AwsStaticStorage"
