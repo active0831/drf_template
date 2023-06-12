@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import *
 
+### [ Modify this ] ###
 class YourModelSerializer(serializers.ModelSerializer):
     image1 = serializers.ImageField(max_length=None, use_url=True, required=False)
     class Meta:

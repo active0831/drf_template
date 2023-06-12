@@ -10,6 +10,7 @@ from .models import *
 
 import uuid, os, io, json
 
+### [ Modify this ] ###
 class YourView(APIView):
     def get(self, request, pk, format=None):
         rv = {"data":"your data"+str(pk)} # default data
